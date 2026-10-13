@@ -1,6 +1,6 @@
-Prototyp gry/symulacji z perspektywy osoby top-down
+Prototyp gry/symulacji z perspektywy osoby top-down, prezentowany na CV
 Zanim porzuciłem projekt, udało mi się osiągnąć kilka rzeczy:
-
+  
   -Pathfinding agentów po navmap'ie generowanej na podstawie tilemap'y
   
   -Podstawowy system rozkłady dnia dla agenta, działający na podstawie posortowanej tablicy z wartościami start, end i priorytet.
