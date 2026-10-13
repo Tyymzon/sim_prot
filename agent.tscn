@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqnbc3klwa0tx"]
+
+[ext_resource type="Script" uid="uid://dtfl4avej25qf" path="res://Scripts/agent.gd" id="1_dhb2b"]
+[ext_resource type="Texture2D" uid="uid://dsdb1jw8havnu" path="res://icon.svg" id="1_jv27j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dhb2b"]
+size = Vector2(128, 127)
+
+[node name="Agent" type="CharacterBody2D"]
+scale = Vector2(0.4, 0.4)
+script = ExtResource("1_dhb2b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jv27j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_dhb2b")
+disabled = true
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+radius = 55.45
+debug_use_custom = true
+debug_path_custom_color = Color(0.860515, 0.000591623, 0.86087, 1)
